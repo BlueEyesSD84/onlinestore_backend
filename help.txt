@@ -1,0 +1,41 @@
+#--------------------To install and activate a virtual environment-------------------------
+# install venv
+python -m pip install virtualenv
+
+
+# create a venv
+python -m venv venv
+
+
+
+# activate venv
+win:
+venv\Scripts\activate
+
+mac lin:
+source venv/bin/activate
+
+
+# deactivate virtual environment
+deactivate
+
+
+# install flask
+python -m pip install flask
+
+#Using Flask will allow us to process requests on a server
+
+#Every product will be an object/dictionary
+
+#@app.get  is creating an end point in server.py
+
+
+# run the project CMD
+FLASK_ENV' is deprecated and will not be used in Flask 2.3. Use 'FLASK_DEBUG' instead.
+
+set FLASK_ENV=development
+set FLASK_APP=server.py
+flask run
+
+flask --app server --debug run
+
